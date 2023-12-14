@@ -7,9 +7,8 @@ for _ in range(n):
     ps.append(input())
 
 for element in ps:
-    open = 0
-    close = 0
-    answer = 0
+    open, close = 0, 0
+    answer = ''
     for parenthesis in element :
         if parenthesis == '(':
             open += 1
