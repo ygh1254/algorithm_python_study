@@ -1,3 +1,5 @@
+# test
+
 n = int(input())
 
 towers = [int(x) for x in input().split()]
