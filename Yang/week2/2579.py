@@ -1,18 +1,16 @@
 # 2579번: 계단 오르기
 n = int(input())
 stairs = []
-visited = [0 for _ in range(n)]
-score, stack = 0, 0
+score = [0 for _ in range(n)]
+stairs = [int(input()) for _ in range(n)]
 
-for _ in range(n):
-    stairs.append(int(input()))
-    
-stairs.reverse
-score += stairs[0]
-
-print(visited)
-# case 1 : 1, 2, 1, 2, ..
-# case 2 : 2, 2, 2, 2, ..
-# case 3 : 2, 1, 2, 1
-for i in range(1, n-1):
-    pass
+for i in range(n) :
+    if i == 0:
+        score[0] = stairs[0]
+    if i == 1:
+        score[1] = stairs[0] + stairs[1]
+    if i > 1 :
+    # else :
+        score[i] = max(score[i-3] + stairs[i] + stairs[i-1], score[i-2] + stairs[i])
+        
+print(score[-1])
