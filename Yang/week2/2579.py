@@ -1,4 +1,4 @@
-# 2579번: 계단 오르기
+# 2579. 계단 오르기
 n = int(input())
 stairs = []
 score = [0 for _ in range(n)]

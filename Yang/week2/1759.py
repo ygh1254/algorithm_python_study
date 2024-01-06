@@ -1,4 +1,4 @@
-# 암호 만들기
+# 1759. 암호 만들기
 from itertools import combinations
 
 VOWEL = ['a', 'e', 'i', 'o', 'u']
