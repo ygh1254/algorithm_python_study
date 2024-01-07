@@ -1,4 +1,4 @@
-# 9252. LCS 2
+# 9252. LCS 2 - 실패
 a = input()
 b = input()
 
