@@ -20,6 +20,3 @@ print(answer)
 
 answer.append(0)
 answer.reverse()
-
-print(answer)
-
